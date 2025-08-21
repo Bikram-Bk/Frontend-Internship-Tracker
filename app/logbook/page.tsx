@@ -8,7 +8,7 @@ import DailyLogCard, { DailyLog } from "../components/daily-log-card";
 import SummaryPopup from "../components/summary-popup";
 
 function Page() {
-  const { data: logs, isLoading, isError, error, refetch } = useGetDailyLogs();
+  const { data: logs } = useGetDailyLogs();
 
   return (
     <AuthProtectedLayout>

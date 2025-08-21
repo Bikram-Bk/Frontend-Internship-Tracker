@@ -14,12 +14,6 @@ import { Input } from "@/components/ui/input";
 import { useGetDailyLogsRange } from "../api/log/use-log-range";
 import { useGetGeminiSummary } from "../api/log/use-gemini-summery";
 
-function formatDate(isoDate: string) {
-  if (!isoDate) return "";
-  const [year, month, day] = isoDate.split("-");
-  return `${month}/${day}/${year}`;
-}
-
 export default function SummaryPopup() {
   const [startDate, setStartDate] = useState(
     new Date().toISOString().split("T")[0]
@@ -38,11 +32,8 @@ export default function SummaryPopup() {
 
   const content = logsData ? JSON.stringify(logsData.data, null, 2) : "";
 
-  const {
-    data: summaryData,
-    isLoading: isSummaryLoading,
-    refetch: fetchSummary,
-  } = useGetGeminiSummary(content, triggerSummary && !!content);
+  const { data: summaryData, isLoading: isSummaryLoading } =
+    useGetGeminiSummary(content, triggerSummary && !!content);
 
   const handleGenerateClick = async () => {
     setTriggerSummary(false);

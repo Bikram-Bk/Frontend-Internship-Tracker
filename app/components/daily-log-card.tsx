@@ -25,7 +25,7 @@ interface DailyLogCardProps {
 }
 
 export default function DailyLogCard({ log }: DailyLogCardProps) {
-  const { mutate: deleteLog, isPending } = useDeleteLog();
+  const { mutate: deleteLog } = useDeleteLog();
 
   return (
     <Card>

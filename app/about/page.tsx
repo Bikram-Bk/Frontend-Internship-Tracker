@@ -1,10 +1,4 @@
-import {
-  BarChart,
-  BrainCircuit,
-  CheckCircle,
-  Clock,
-  Target,
-} from "lucide-react";
+import { BrainCircuit, CheckCircle, Clock, Target } from "lucide-react";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -44,12 +38,12 @@ export default function AboutPage() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 space-y-4">
             <p className="text-lg leading-relaxed text-justify">
-              In today's fast-paced world, keeping track of tasks can be
-              overwhelming. It's easy to get lost in a sea of to-do lists and
-              lose sight of the bigger picture. Our mission with InternTrack is
-              to provide a simple yet powerful tool that not only helps you log
-              your activities but also offers valuable insights through
-              intelligent analysis.We aim to empower individuals and teams to
+              In today&apos;s fast-paced world, keeping track of tasks can be
+              overwhelming. It&apos;s easy to get lost in a sea of to-do lists
+              and lose sight of the bigger picture. Our mission with InternTrack
+              is to provide a simple yet powerful tool that not only helps you
+              log your activities but also offers valuable insights through
+              intelligent analysis. We aim to empower individuals and teams to
               reflect on their weekly efforts, identify patterns, and optimize
               their workflow for maximum efficiency and minimum stress. By
               transforming raw log data into clear summaries and visual charts,

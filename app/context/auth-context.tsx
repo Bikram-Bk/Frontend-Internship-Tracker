@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [authenticated, setAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  const { data, error, refetch, isLoading } = useMe();
+  const { data, error, isLoading } = useMe();
 
   useEffect(() => {
     const token = localStorage.getItem("accessToken");

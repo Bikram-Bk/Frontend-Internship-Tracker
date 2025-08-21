@@ -32,5 +32,6 @@ export const useGetGeminiSummary = (content: string, enabled: boolean) => {
 
       return response.json();
     },
+    enabled,
   });
 };

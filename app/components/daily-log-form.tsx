@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { DailyLogInput, useUpdateDailyLog } from "../api/log/use-log";
 import { Input } from "@/components/ui/input";
-import { Select } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
